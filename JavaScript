@@ -1,0 +1,21 @@
+// Smooth animation when scrolling into view
+const sections = document.querySelectorAll("section");
+
+const revealOnScroll = () => {
+  const triggerBottom = window.innerHeight * 0.85;
+
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect().top;
+    if (rect < triggerBottom) {
+      section.classList.add("show");
+    }
+  });
+};
+
+window.addEventListener("scroll", revealOnScroll);
+
+// Simple form submission (just for demo)
+document.querySelector("form").addEventListener("submit", e => {
+  e.preventDefault();
+  alert("Thank you for your message, Mahalakshmi will get back to you!");
+});
