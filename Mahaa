@@ -1,0 +1,152 @@
+/* 1. Global Background - Royal Blue Gradient */
+body {
+    background: radial-gradient(circle, #003366 0%, #000d1a 100%);
+    color: #00d4ff; /* Electric Blue Text */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 2. Header & Description */
+header h1 {
+    font-size: 28px;
+    text-shadow: 0 0 10px #00d4ff;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.description {
+    color: #0077be;
+    text-align: center;
+    border-bottom: 2px solid #00d4ff;
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+}
+
+/* 4. Main Card Container (Navy Blue) */
+.workshop-card {
+    background-color: #001a33; /* Dark Navy Background */
+    width: 100%;
+    max-width: 600px;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1.5px solid #0055ff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* 5. Fieldsets and Legends */
+fieldset {
+    border: 1px solid #0044cc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+legend {
+    color: #00d4ff;
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+/* 6. Form Element Styling */
+.input-group {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #000d1a;
+    border: 1px solid #0055ff;
+    color: #80eaff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00d4ff;
+    box-shadow: 0 0 8px #00d4ff;
+}
+
+/* 7. Button Styling */
+.btn-area {
+    text-align: center;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.submit-btn {
+    background-color: #00d4ff;
+    color: #000d1a;
+}
+
+.submit-btn:hover {
+    background-color: #ffffff; /* Contrast on hover */
+    transform: translateY(-2px);
+}
+
+.reset-btn {
+    background-color: transparent;
+    border: 1px solid #0055ff;
+    color: #00d4ff;
+    margin-left: 10px;
+}
+
+/* 8. Table Styling (Zebra Blue) */
+.zebra-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.zebra-table th {
+    background-color: #0044cc;
+    color: white;
+    padding: 10px;
+}
+
+.zebra-table td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #002266;
+}
+
+/* Zebra Stripes */
+.zebra-table tbody tr:nth-child(even) {
+    background-color: #000d1a;
+}
+
+.zebra-table tbody tr:hover {
+    background-color: #0055ff;
+    color: white;
+}
+
+/* 10. Footer Section */
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: #000d1a;
+    width: 100%;
+    border-top: 1px solid #00d4ff;
+    color: #0044cc;
+}
