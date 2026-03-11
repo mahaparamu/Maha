@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop Event Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>MINI TECH WORKSHOP 2026</h1>
+        <p class="description">Skill Building Session by Adroit Technologies</p>
+    </header>
+
+    <div class="workshop-card">
+        <section class="event-details">
+            <h3>Event Overview</h3>
+            <div class="info-row">
+                <span><strong>Date:</strong> May 10, 2026</span>
+                <span><strong>Venue:</strong> Blue Ocean Lab</span>
+                <span><strong>Fee:</strong> Free for Students</span>
+            </div>
+        </section>
+
+        <form>
+            <fieldset>
+                <legend>Member Details</legend>
+                <div class="input-group">
+                    <label>Candidate Name</label>
+                    <input type="text" placeholder="Enter name...">
+                </div>
+                <div class="input-group">
+                    <label>Workshop Choice</label>
+                    <select>
+                        <option>CSS Styling</option>
+                        <option>Web Design</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Info</legend>
+                <div class="input-group">
+                    <label>Upload Profile Image</label>
+                    <input type="file">
+                </div>
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea rows="2"></textarea>
+                </div>
+            </fieldset>
+
+            <div class="check-section">
+                <input type="checkbox" id="agree">
+                <label for="agree">I confirm my participation.</label>
+            </div>
+
+            <div class="btn-area">
+                <button type="submit" class="submit-btn">Submit Now</button>
+                <button type="reset" class="reset-btn">Clear</button>
+            </div>
+        </form>
+
+        <section class="table-section">
+            <h3>Registered Participants</h3>
+            <table class="zebra-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Slot</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>W-01</td><td>Rahul Blue</td><td>Morning</td></tr>
+                    <tr><td>W-02</td><td>Kiran Sky</td><td>Evening</td></tr>
+                    <tr><td>W-03</td><td>Arun Deep</td><td>Morning</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        <p>Support: support@blueworkshop.in | +91 000 000 0000</p>
+        <p>&copy; 2026 Small Event Workshop Management</p>
+    </footer>
+
+</body>
+</html>
