@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Small Workshop Registration</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Web Development Workshop 2026</h1>
+
+<p><b>Date:</b> 15 March 2026</p>
+<p><b>Time:</b> 10:00 AM - 4:00 PM</p>
+<p><b>Venue:</b> College Seminar Hall</p>
+
+<hr>
+
+<h2>Registration Form</h2>
+
+<form onsubmit="return validateForm()">
+
+<label>Full Name:</label>
+<input type="text" id="name" required>
+
+<label>Date of Birth:</label>
+<input type="date" id="dob" required>
+
+<label>Email:</label>
+<input type="email" id="email" required>
+
+<label>Phone:</label>
+<input type="tel" id="phone" required>
+
+<label>College Name:</label>
+<input type="text" id="college" required>
+
+<label>Select Event:</label>
+<select id="event">
+<option>Web Development Workshop</option>
+<option>AI Workshop</option>
+<option>Cyber Security Workshop</option>
+</select>
+
+<label>Select Session:</label>
+<select id="session">
+<option>HTML Basics</option>
+<option>CSS Styling</option>
+<option>JavaScript Introduction</option>
+</select>
+
+<label>Mode:</label>
+<input type="radio" name="mode" value="Online"> Online
+<input type="radio" name="mode" value="Offline"> Offline
+
+<br><br>
+
+<label>Upload ID Proof:</label>
+<input type="file">
+
+<label>Comments:</label>
+<textarea rows="3"></textarea>
+
+<br>
+
+<input type="checkbox" id="confirm"> I confirm that the above details are correct.
+
+<br><br>
+
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+
+</form>
+
+</div>
+
+<br><br>
+
+<h2 align="center">Registered Participants</h2>
+
+<table border="1" width="80%" align="center" id="participantsTable">
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Phone</th>
+<th>College</th>
+<th>Event</th>
+<th>Session</th>
+<th>Mode</th>
+</tr>
+</table>
+
+<footer>
+Contact: workshop@email.com | Help Desk: 9876543210
+</footer>
+
+</body>
+</html>
