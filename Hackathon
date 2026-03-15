@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Activity Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📚 Student Activity Tracker</h1>
+<p class="welcome">Track your daily learning progress</p>
+
+<div class="progress-box">
+<div id="progressBar"></div>
+</div>
+
+<h3 id="progressText">0 out of 5 activities completed</h3>
+
+<ul id="activityList">
+
+<li>
+<h3>HTML Practice</h3>
+<p>Complete HTML basic exercises</p>
+<button onclick="markComplete(this)">Complete</button>
+<span class="status">Pending</span>
+</li>
+
+<li>
+<h3>CSS Design</h3>
+<p>Create responsive webpage</p>
+<button onclick="markComplete(this)">Complete</button>
+<span class="status">Pending</span>
+</li>
+
+<li>
+<h3>JavaScript Learning</h3>
+<p>Study variables and functions</p>
+<button onclick="markComplete(this)">Complete</button>
+<span class="status">Pending</span>
+</li>
+
+<li>
+<h3>Mini Project</h3>
+<p>Build simple calculator</p>
+<button onclick="markComplete(this)">Complete</button>
+<span class="status">Pending</span>
+</li>
+
+<li>
+<h3>GitHub Upload</h3>
+<p>Upload project to GitHub</p>
+<button onclick="markComplete(this)">Complete</button>
+<span class="status">Pending</span>
+</li>
+
+</ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
