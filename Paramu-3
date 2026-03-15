@@ -1,0 +1,41 @@
+function validateForm() {
+
+var confirmBox = document.getElementById("confirm");
+
+if(!confirmBox.checked){
+alert("Please confirm the details before submitting.");
+return false;
+}
+
+var name = document.getElementById("name").value;
+var email = document.getElementById("email").value;
+var phone = document.getElementById("phone").value;
+var college = document.getElementById("college").value;
+var event = document.getElementById("event").value;
+var session = document.getElementById("session").value;
+
+var mode = document.querySelector('input[name="mode"]:checked');
+
+if(mode == null){
+alert("Please select mode");
+return false;
+}
+
+mode = mode.value;
+
+var table = document.getElementById("participantsTable");
+
+var row = table.insertRow(-1);
+
+row.insertCell(0).innerHTML = name;
+row.insertCell(1).innerHTML = email;
+row.insertCell(2).innerHTML = phone;
+row.insertCell(3).innerHTML = college;
+row.insertCell(4).innerHTML = event;
+row.insertCell(5).innerHTML = session;
+row.insertCell(6).innerHTML = mode;
+
+alert("Registration Successful!");
+
+return false;
+}
