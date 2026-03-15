@@ -1,0 +1,32 @@
+let completed = 0;
+let total = 5;
+
+function markComplete(button){
+
+let status = button.nextElementSibling;
+
+if(status.innerText === "Pending"){
+
+status.innerText = "Completed";
+status.classList.add("completed");
+
+button.disabled = true;
+
+completed++;
+
+updateProgress();
+
+}
+
+}
+
+function updateProgress(){
+
+document.getElementById("progressText").innerText =
+completed + " out of " + total + " activities completed";
+
+let percent = (completed / total) * 100;
+
+document.getElementById("progressBar").style.width = percent + "%";
+
+}
